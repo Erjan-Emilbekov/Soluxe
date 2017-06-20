@@ -20,11 +20,11 @@ input, select, textarea, button { font-family: arial, helvetica, sans-serif; fon
 
 * { -webkit-box-sizing: border-box; box-sizing: border-box; }
 
-body { font-family: 'Lato', sans-serif; color: #000; background: #f9f9f9; font-size: 14px; line-height: 1.3; min-width: 320px; }
+body { font-family: 'Lato', sans-serif; color: #333; background: #f9f9f9; font-size: 14px; line-height: 1.3; min-width: 320px; }
 
 .container { min-width: 320px; max-width: 1170px; -webkit-box-sizing: border-box; box-sizing: border-box; padding: 0 15px; margin: 0 auto; }
 
-@media screen and (max-width: 1050px) { .container { padding: 0 5px; } }
+@media screen and (max-width: 1150px) { .container { padding: 0 5px; } }
 
 .first-header { background: #ddd; color: #555; }
 
@@ -120,7 +120,7 @@ body { font-family: 'Lato', sans-serif; color: #000; background: #f9f9f9; font-s
 
 .soluxe { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-justify-content: space-between; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; margin: 76px 0 0 0; }
 
-@media screen and (max-width: 1050px) { .soluxe { -webkit-justify-content: space-around; -ms-flex-pack: distribute; justify-content: space-around; } }
+@media screen and (max-width: 1150px) { .soluxe { -webkit-justify-content: space-around; -ms-flex-pack: distribute; justify-content: space-around; } }
 
 .soluxe-slide { width: 555px; }
 
@@ -130,13 +130,17 @@ body { font-family: 'Lato', sans-serif; color: #000; background: #f9f9f9; font-s
 
 @media screen and (max-width: 650px) { .soluxe-info { width: 100%; } }
 
-@media screen and (max-width: 1050px) { .soluxe-info { margin: 25px 0 0; } }
+@media screen and (max-width: 1150px) { .soluxe-info { margin: 25px 0 0; } }
 
 .soluxe-info .info-title { margin: 0; font-family: 'Lato', sans-serif; font-size: 36px; line-height: 27px; position: relative; letter-spacing: 1.7px; margin: 0 0 55px; }
 
 .soluxe-info .info-title::after { content: ""; position: absolute; width: 100px; height: 4px; background: #cca66b; bottom: -28px; left: 0; }
 
 .soluxe-info .info-txt { font-family: 'Opan Sans', sans-serif; font-size: 16px; margin: 25px 0 25px; line-height: 1.58; letter-spacing: 1.45px; }
+
+@media screen and (max-width: 860px) { .soluxe-info .info-txt { font-size: 14px; } }
+
+@media screen and (max-width: 650px) { .soluxe-info .info-txt { font-size: 12px; margin: 10px 0; } }
 
 .item-nav { margin: 0 2px; }
 
@@ -153,3 +157,17 @@ body { font-family: 'Lato', sans-serif; color: #000; background: #f9f9f9; font-s
 .slick-next { right: 0px; }
 
 .slick-prev { left: 0px; }
+
+.service { margin: 40px 0 0; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-justify-content: space-between; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; }
+
+@media screen and (max-width: 1150px) { .service { -webkit-justify-content: space-around; -ms-flex-pack: distribute; justify-content: space-around; } }
+
+.service__item { margin: 36px 0; max-width: 360px; min-width: 270px; background: #FFF; text-align: center; -webkit-box-shadow: 2px 2px 15px 3px rgba(0, 0, 0, 0.2); box-shadow: 2px 2px 15px 3px rgba(0, 0, 0, 0.2); -webkit-border-radius: 5px; border-radius: 5px; }
+
+.service__item img { display: block; width: 100%; margin: -5px 0 0 0; padding: 0; }
+
+.service__title { font-family: 'Lato', sans-serif; font-size: 22px; line-height: 1; letter-spacing: 1px; margin: 0; padding: 32px 0 0px; }
+
+.service__txt { font-family: 'Opan Sans', sans-serif; line-height: 22px; margin: 0; padding: 12px 0 24px; letter-spacing: 2px; font-size: 16px; }
+
+.slider-block { text-align: center; }
