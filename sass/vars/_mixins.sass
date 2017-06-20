@@ -1,0 +1,17 @@
+$phone2: 450px
+$phone: 650px
+$tablet: 860px
+$md: 1050px
+
+=mini-phone
+	@media screen and (max-width: $phone2)
+		@content
+=phone
+	@media screen and (max-width: $phone)
+		@content
+=tablet
+	@media screen and (max-width: $tablet)
+		@content
+=md
+	@media screen and (max-width: $md)
+		@content
