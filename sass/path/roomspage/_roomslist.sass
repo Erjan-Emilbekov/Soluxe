@@ -1,0 +1,73 @@
+.rooms-list
+	display: flex
+	flex-flow: wrap row
+	justify-content: space-between
+	margin-top: 87px
+	.room-block
+		width: 555px
+		margin-bottom: 60px
+		+md
+			margin: 0 auto 60px auto
+		+phone
+			width: 95%
+
+.room-list-img
+	width: 555px
+	height: 322px
+	+phone
+		width: 100%
+		height: auto
+
+.room-list-tag
+	font:
+		family: "LatoBold"
+		size: 24px
+	color: $txt-c
+	margin: 23px 0 0 0
+	letter-spacing: 1px
+
+.room-list-txt
+	color: $txt-light
+	font:
+		family: "OpenSansRegular"
+		size: 16px
+	line-height: 26px
+	margin-top: 11px
+	letter-spacing: 1px
+	height: 78px
+	+phone
+		height: auto
+
+.rooms-list-links
+	@each $icon in bed, tv, wifi, drink, bath, tbl
+		.ic-#{$icon}
+			background-image: url(../img/rooms-page/ic-#{$icon}.png)
+
+.rooms-list-links
+	span
+		margin-right: 16px
+		display: inline-block
+		width: 55px
+		height: 55px
+		background-position: 50%
+		background-repeat: no-repeat
+		border-radius: 50%
+		border: 1px solid #f0f0f0
+		+phone
+		margin-top: 10px
+
+.btn-more
+	margin-top: 7px
+	padding: 14px 30px 9px 33px
+	border-radius: 4px
+	background: $gold
+	display: inline-block
+	color: #fff
+	text-decoration: none
+	letter-spacing: 1px
+	font:
+		family: "LatoRegular"
+		size: 18px
+
+footer
+	margin-top: 15px !important

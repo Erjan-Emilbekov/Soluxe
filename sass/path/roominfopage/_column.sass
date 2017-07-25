@@ -1,0 +1,261 @@
+.columns
+	margin-top: 70px
+	+md
+		margin: 70px auto 10px auto
+
+.main-column
+	width: 848px
+	float: left
+	+md
+		width: 95%
+		margin: 0 auto
+		float: none
+	.info-block
+		.h_underline
+			margin: 0 0 41px 0
+			position: relative
+			font-size: 36px
+			letter-spacing: 1px
+			&::after
+				content: ""
+				position: absolute
+				width: 100px
+				height: 3px
+				bottom: -16px
+				left: 0
+				background: $gold
+		.info-txt
+			line-height: 25px
+			font-family: "OpenSansRegular"
+			font-size: 16px
+			letter-spacing: 1px
+.soluxe-slide
+	margin-top: 25px
+.up-slide
+	img
+		width: 848px !important
+		height: 512px !important
+		+tablet
+			width: 640px !important
+			height: auto !important
+		+phone
+			width: 650px !important
+			height: auto !important
+
+.slick-active
+	position: relative
+
+.under-slide
+	img
+		width: 137px
+		height: 94px
+		margin: 1px 3px
+
+
+.slick-slide
+	outline: none
+	max-width: 848px
+.slick-arrow
+	position: absolute
+	width: 50px
+	height: 100% 
+	font-size: 0
+	background: transparent
+	border: none
+	z-index: 100 
+	top: 50px  
+	&::after
+		content: ""
+		width: 100%
+		height: 100%
+		position: absolute   
+		z-index: 101 
+		left: 0
+		top: 0
+.slick-prev::after
+	background: url('../img/room-info-page/arrow.png') 50% 50% no-repeat 
+.slick-next::after
+	background: url('../img/room-info-page/arrow.png') 50% 50% no-repeat 
+	-webkit-transform: rotate(180deg) 
+	-moz-transform: rotate(180deg) 
+	-ms-transform: rotate(180deg) 
+	-o-transform: rotate(180deg) 
+	transform: rotate(180deg)
+
+.slider-for.slick-slider
+	width: 848px !important
+	height: 512px !important
+	+tablet
+		width: 90% !important
+		margin: 0 auto
+		height: auto !important
+
+
+.slick-next
+	right: 0px
+.slick-prev
+	left: 0px
+	
+.slick-dots
+	position: absolute
+	bottom: -39px
+	text-align: center
+	left: 50%
+	margin: 0 0 0 -7.2% 
+	+tablet
+		display: none
+	li
+		margin: 0 7px
+		display: inline-block 
+	.slick-active
+		button
+			background: $gold 
+	button
+		background: transparent 
+		-webkit-border-radius: 50%
+		border-radius: 50%
+		width: 11px
+		height: 11px
+		border: 1px solid $gold
+		font-size: 0
+		padding: 0
+		margin: 0
+
+
+.sidebar
+	width: 262px
+	float: right
+	+md
+		width: 95%
+		float: none
+		margin: 0 auto
+	.forms-block
+		background: $light-g
+		h4
+			margin: 0 0 16px 0
+			font-size: 19px
+			font-family: "LatoBold"
+
+.forms-block
+	background: $light-g
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+	letter-spacing: 1px
+	padding: 28px 20px
+	margin: 10px 0 0 0
+
+	input
+		width: 220px
+		height: 48px
+		border: 1px solid #bbb
+		-webkit-border-radius: 6px
+		border-radius: 6px
+		margin: 0 0 20px 0
+		-webkit-box-sizing: border-box
+		-moz-box-sizing: border-box
+		box-sizing: border-box
+		padding: 5px 10px
+		font-family: 'Lato', sans-serif
+		font-size: 14px
+		+md
+			width: 90%
+	select
+		width: 220px
+		height: 48px
+		color: #777  
+		-webkit-border-radius: 6px 
+		border-radius: 6px 
+		border: 1px solid #bbb
+		font-family: 'Lato', sans-serif
+		font-size: 14px  
+		margin: 0
+		-webkit-box-sizing: border-box
+		-moz-box-sizing: border-box
+		box-sizing: border-box
+		padding: 5px 10px 
+		+md
+			width: 90%
+			
+
+	button
+		font-size: 18px 
+		font-family: 'Lato', sans-serif 
+		color: #FFF
+		background: $gold
+		display: inline-block
+		width: 100%
+		height: 48px
+		line-height: 48px
+		text-align: center  
+		border: none
+		margin: 20px 0 0 0
+		-webkit-border-radius: 6px
+		border-radius: 6px
+		+md
+			width: 90%
+		
+	.form-row 
+		display: block
+		position: relative
+		
+		&::after
+			content: "\63"
+			position: absolute
+			top: 14px
+			right: 19px
+			font-family: "untitled-font-2"
+			font-size: 16px 
+			color: #777 
+			
+
+.left-line-h
+	font-size: 26px
+	margin: 0
+	letter-spacing: 2px
+	padding-left: 87px
+	position: relative
+	&::before
+		content: ""
+		width: 70px
+		height: 3px
+		background: $gold
+		position: absolute
+		top: 15px
+		left: 0px
+
+
+.row
+	display: inline-block
+	width: 263px
+	margin-right: 26px
+	margin-top: 32px
+	+md
+		display: block
+		margin: 32px auto 0 auto
+
+.features-list
+	@each $icon in bed, tv, wifi, drink, bath, table, phone, sofa,dish, safe, bathstuff, temp
+		.ic-#{$icon}
+			background-image: url(../img/room-info-page/ic-#{$icon}.png)
+			background-position: 0 50%
+			background-repeat: no-repeat
+
+.features-list
+	margin-top: 52px
+	span
+		padding: 24px 0 28px 66px
+		font-family: "LatoBold", arial
+		font-size: 15px
+		color: $txt-c
+		display: inline-block
+
+.features-list .row:last-child
+	margin-right: 0
+	+md
+	margin-right: auto
+
+.other-rooms
+	margin-top: 68px
+	.rooms-list
+		margin-top: 46px

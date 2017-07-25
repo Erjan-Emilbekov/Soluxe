@@ -20,13 +20,17 @@ input, select, textarea, button { font-family: arial, helvetica, sans-serif; fon
 
 * { -webkit-box-sizing: border-box; box-sizing: border-box; }
 
-body { font-family: 'Lato', sans-serif; color: #333; background: #f9f9f9; font-size: 14px; line-height: 1.3; min-width: 320px; }
+body { font-family: 'Lato', sans-serif; color: #333; background: #fff; font-size: 14px; line-height: 1.3; min-width: 320px; }
 
 .container { min-width: 320px; max-width: 1170px; -webkit-box-sizing: border-box; box-sizing: border-box; padding: 0 15px; margin: 0 auto; }
 
 @media screen and (max-width: 860px) { .container { padding: 0; } }
 
-.first-header { background: #ddd; color: #555; }
+p { font-family: "OpenSansRegular"; font-size: 16px; font-color: #454; }
+
+h4 { font-family: "LatoBold",arial; font-size: 24px; color: #333; }
+
+.first-header { background: #ddd; color: #555; position: fixed; width: 100%; left: 0; top: 0; z-index: 100; }
 
 .first-header span { display: inline-block; position: relative; margin: 0; }
 
@@ -55,6 +59,8 @@ body { font-family: 'Lato', sans-serif; color: #333; background: #f9f9f9; font-s
 @media screen and (max-width: 650px) { .first-header .whats::after { top: 8px; left: 34%; } }
 
 @media screen and (max-width: 450px) { .first-header .whats::after { left: 22%; } }
+
+.main-header { margin: 59px 0 0 0; }
 
 .logo { padding: 21px 0 18px; display: inline-block; }
 
@@ -118,7 +124,7 @@ body { font-family: 'Lato', sans-serif; color: #333; background: #f9f9f9; font-s
 
 .forms-block .form-row::after { content: "\63"; position: absolute; top: 35%; right: 40px; font-family: "untitled-font-2"; font-size: 16px; color: #777; }
 
-.soluxe { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-justify-content: space-between; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; margin: 76px 0 0 0; }
+.soluxe { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-justify-content: space-between; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; margin: 0; }
 
 @media screen and (max-width: 1150px) { .soluxe { -webkit-justify-content: space-around; -ms-flex-pack: distribute; justify-content: space-around; } }
 
@@ -172,6 +178,34 @@ body { font-family: 'Lato', sans-serif; color: #333; background: #f9f9f9; font-s
 
 .service__txt { font-family: 'Opan Sans', sans-serif; line-height: 22px; margin: 0; padding: 12px 0 24px; letter-spacing: 2px; font-size: 16px; }
 
+.standard-point { font-family: "Opan Sans", sans-serif; line-height: 22px; margin: 0; padding: 12px 0 24px; letter-spacing: 2px; font-size: 16px; }
+
+.service-title { font-size: 36px; font-family: "Lato", sans-serif; line-height: 36px; margin: 0 auto; padding: 47px 0 47px; letter-spacing: 0.6px; position: relative; text-align: center; }
+
+.service-title::after { content: ""; position: absolute; width: 100px; height: 3px; background: #cca66b; bottom: 34px; left: 50%; margin: 0 0 0 -50px; }
+
+.service-info { font-family: "Opan Sans", sans-serif; font-size: 16px; margin: 25px 0 25px; line-height: 1.58; letter-spacing: 1.45px; text-align: center; }
+
+.main-title { text-align: center; font-size: 48px; font-family: "Lato", sans-serif; line-height: 36px; margin: 0 auto; letter-spacing: 0.6px; position: relative; padding: 45px 0 30px; }
+
+.main-title::after { content: ""; position: absolute; width: 200px; height: 3px; background: #cca66b; bottom: 0; left: 50%; margin: 0 0 0 -100px; }
+
+.main-info { font-family: "Opan Sans", sans-serif; font-size: 20px; margin: 25px 0 35px; line-height: 1.58; letter-spacing: 0.45px; text-align: center; }
+
+.descrip-item3 { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-justify-content: space-between; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; margin: 16px 0 0 0; }
+
+@media screen and (max-width: 1150px) { .descrip-item3 { -webkit-justify-content: space-around; -ms-flex-pack: distribute; justify-content: space-around; } }
+
+.descrip-item3-info { width: 555px; }
+
+@media screen and (max-width: 650px) { .descrip-item3-info { max-width: 650px; width: 100%; } }
+
+.descrip-item3-photo { width: 555px; }
+
+@media screen and (max-width: 650px) { .descrip-item3-photo { max-width: 650px; width: 100%; } }
+
+.descrip-item3-photo img { width: 100%; }
+
 .slider-block { text-align: center; }
 
 .slider-block .slider-title { font-size: 36px; font-family: 'Lato', sans-serif; line-height: 27px; margin: 0; padding: 57px 0  57px; letter-spacing: 0.6px; position: relative; }
@@ -222,7 +256,7 @@ footer .main-footer .logo-block { max-width: 360px; }
 
 footer .main-footer .logo-block .logo { padding: 12px 0 20px 0; }
 
-footer .main-footer .logo-block .footer-item { padding: 0 0 0 28px; font-family: 'Opan Sans', sans-serif; font-size: 16px; line-height: 27px; letter-spacing: 2px; font-weight: 400; }
+footer .main-footer .logo-block .footer-item { padding: 0 0 0 28px; font-family: "OpenSansRegular", sans-serif; font-size: 16px; line-height: 27px; letter-spacing: 2px; font-weight: 400; }
 
 footer .main-footer .logo-block .map { background: url("../img/map-icon.png") 0 50% no-repeat; }
 
@@ -234,16 +268,24 @@ footer .main-footer .menu { width: 165px; }
 
 footer .main-footer .menu ul { margin: 0; padding: 0; list-style: none; }
 
-footer .main-footer .menu ul a { color: #FFF; text-decoration: none; display: inline-block; padding: 11px 0; font-family: "Opan Sans", sans-serif; font-size: 16px; line-height: 21px; -webkit-transition: all 0.3s; -o-transition: all 0.3s; transition: all 0.3s; }
+footer .main-footer .menu ul a { color: #FFF; text-decoration: none; display: inline-block; padding: 11px 0; font-family: "OpenSansRegular", sans-serif; font-size: 16px; line-height: 21px; -webkit-transition: all 0.3s; -o-transition: all 0.3s; transition: all 0.3s; }
 
 footer .main-footer .menu ul a:hover { color: #cca66b; }
 
 footer .main-footer .link { max-width: 360px; min-width: 270px; }
 
-footer .main-footer .link button { font-size: 18px; font-family: 'Lato', sans-serif; color: #FFF; background: #cca66b; display: inline-block; width: 126px; height: 48px; line-height: 48px; text-align: center; border: none; margin: 15px 5px; -webkit-border-radius: 6px; border-radius: 6px; }
+footer .main-footer .link button { font-size: 18px; font-family: "LatoRegular", sans-serif; color: #FFF; background: #cca66b; display: inline-block; width: 126px; height: 48px; line-height: 48px; text-align: center; border: none; margin: 15px 5px; -webkit-border-radius: 6px; border-radius: 6px; }
 
 @media screen and (max-width: 650px) { footer .main-footer .link button { display: inline-block; width: 100%; } }
 
 footer .main-footer .link input { width: 200px; height: 48px; background: #292929; border: 1px solid #555; -webkit-border-radius: 6px; border-radius: 6px; color: #fff; margin: 15px 5px; -webkit-box-sizing: border-box; box-sizing: border-box; padding: 5px 10px; font-family: 'Lato', sans-serif; font-size: 14px; }
 
 @media screen and (max-width: 650px) { footer .main-footer .link input { width: 100%; } }
+
+footer .first-flex-menu { padding-left: 68px; }
+
+footer .second-flex-menu { padding-left: 34px; }
+
+.copyright { margin-top: 30px; padding: 22px 0 60px 0; border-top: 1px solid #505050; }
+
+.copyright p { letter-spacing: 1px; color: #fff; font-family: "OpenSansRegular"; font-size: 16px; }

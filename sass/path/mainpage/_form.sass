@@ -1,0 +1,73 @@
+.forms-block
+	background: $light-g
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+	padding: 35px  
+	margin: -80px 0 0 -4px 
+	+phone
+		text-align: center
+		padding: 15px
+		margin: 10px 0 0 0 
+	input
+		width: 263px
+		height: 48px
+		border: 1px solid #bbb
+		-webkit-border-radius: 6px
+		border-radius: 6px
+		margin: 15px 25px 
+		-webkit-box-sizing: border-box
+		-moz-box-sizing: border-box
+		box-sizing: border-box
+		padding: 5px 10px
+		font-family: 'Lato', sans-serif
+		font-size: 14px
+	select
+		width: 163px
+		height: 48px
+		color: #777  
+		-webkit-border-radius: 6px 
+		border-radius: 6px 
+		border: 1px solid #bbb
+		font-family: 'Lato', sans-serif
+		font-size: 14px  
+		margin: 15px 34px 15px 30px
+		-webkit-box-sizing: border-box
+		-moz-box-sizing: border-box
+		box-sizing: border-box
+		padding: 5px 10px 
+		+phone
+			width: 261px
+			
+
+	button
+		font-size: 18px 
+		font-family: 'Lato', sans-serif 
+		color: #FFF
+		background: $gold
+		display: inline-block
+		width: 163px
+		height: 48px
+		line-height: 48px
+		text-align: center  
+		border: none
+		margin: 15px 20px
+		-webkit-border-radius: 6px
+		border-radius: 6px
+		+phone
+			display: inline-block
+			width: 263px 
+		
+	.form-row 
+		display: inline-block
+		position: relative
+		
+		&::after
+			content: "\63"
+			position: absolute
+			top: 35% 
+			right: 40px
+			font-family: "untitled-font-2"
+			font-size: 16px 
+			color: #777 
+			

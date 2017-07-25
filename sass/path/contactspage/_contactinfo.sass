@@ -1,0 +1,93 @@
+.contacts-block 
+	margin-top: 76px
+	margin-bottom: 40px
+	.location
+		width: 50%
+		float: left
+		+md
+			float: none
+			width: 95%
+			margin: 0 auto
+
+.h_underline--second
+	margin: 0 0 46px 0
+
+.h_underline
+	margin: 0 0 41px 0
+	position: relative
+	font-size: 36px
+	letter-spacing: 1px
+	&::after
+		content: ""
+		position: absolute
+		width: 100px
+		height: 3px
+		bottom: -16px
+		left: 0
+		background: $gold
+
+.location
+	p
+		line-height: 25px
+		margin: 0 0 25px 0
+		letter-spacing: 1px
+	.phones
+		span
+			display: block
+			font-size: 16px
+			padding-left: 20px
+			letter-spacing: 1px
+			line-height: 25px
+			font-family: "OpenSansRegular", arial
+	.email
+		margin-top: 25px
+		padding-left: 20px
+
+.form-wrap
+	width: 50%
+	float: right
+	padding-left: 16px
+	+md
+		float: none
+		width: 95%
+		margin: 0 auto
+	form
+		input
+			padding-left: 16px
+			width: 260px
+			height: 48px
+			border: 1px solid #bbbbbb
+			border-radius: 6px
+			background: transparent
+			display: inline-block
+			margin-bottom: 30px
+		textarea
+			border: 1px solid #bbbbbb
+			border-radius: 6px
+			padding-left: 10px
+			padding-top: 16px
+			resize: none
+			height: 176px
+			width: 552px
+			+md
+				width: 100%
+		.btn
+			font-family: "LatoRegular", arial
+			font-size: 18px
+			color: #fff
+			background: $gold
+			border: 0
+			border-radius: 6px
+			letter-spacing: 1px
+			margin-top: 28px
+			padding-top: 15px
+			padding-bottom: 11px
+			padding-left: 85px
+			padding-right: 79px
+
+
+.first-input
+	margin-right: 29px
+
+footer
+	margin: 0 !important
